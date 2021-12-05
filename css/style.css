@@ -1,4 +1,3 @@
-
 *
 {
     padding:0;
@@ -7,34 +6,39 @@
 body
 {
   
-  color: white;
-  font-size: 16px;
-  font-family: arial,sans-serif,helvetica;
+  color: black;
+  font-size: 14px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 1.6em;  
   margin:0px;
   text-align:justify;
-  background-image: url(../images/rb.jpg);
-  background-size: cover;
-  backface-visibility: var(3);
+  scroll-behavior: smooth;
+  letter-spacing: 0.1em;
+  
 }
 #main_header 
 {
     
-    background-image: url(../images/road.jpeg);
+    background-image: url(../images/bgcover.jpg);
     color:white;
     background-repeat: no-repeat;
     background-position: center center;
     border:1px solid black;
     background-size: cover;
-    margin-top:46px;
-    padding: 20px;
-    min-height: 300px;
+    margin-top:42px;
+    padding: 10px;
+    min-height: 390px;
+    transition: background-image 1s ease-in-out;
 
 }
-.titlename{
-    padding: 10px;
-    padding-bottom:10px;
+.titlename
+{
     
+   
+    display:block;
+    margin-bottom:15px;
+    margin-top:15px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 
@@ -45,9 +49,12 @@ body
 
 h2
 {
-    color: gold;
+    color: #ff2f3a;
     font-size:20px;
-    padding:30px;
+    
+    padding-left:30px;
+    padding-top:20px;
+    margin-top:10px;
 
 }
 #headtitles 
@@ -56,14 +63,16 @@ h2
 }
 .navbar
 {
-    background-color: #0b0b0b;
-    color: #fff;
+    background-color: rgb(0, 0, 0);
+   
     margin:0px;
+    
     padding:10px;
     position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
  width: 100%;
- margin-bottom: 50px;
+ margin-bottom: 42px;
+
     
 }
 .navbar ul
@@ -76,16 +85,26 @@ h2
     
    
     display: inline;
+    margin-right: 15px;
+    margin-left:15px;
     
 }
 .navbar a
 {
     
-    color: gold;
+    color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 13px;
     padding-right: 15px;
+
     
+}
+.navbar a:hover
+{
+    color:gold;
+    font-size:17px;
+    padding:10px;
+    background-color: #222222;
 }
 .navbar .container 
 {
@@ -110,7 +129,7 @@ float: left;
 width: 30%;
 box-sizing: border-box;
 padding:10px;
-padding-left:60px;
+padding-left:30px;
 }
  #side_bar
 {
@@ -118,13 +137,14 @@ padding-left:60px;
     float:right;
     width:70%;
     box-sizing: border-box;
-    padding-right:5px;
+    padding-right:15px;
     padding-left:5px;
     
+    
 }
-p 
+#sp 
 {
-    color: rgb(237, 241, 246);
+    color: #feb268;
     text-indent: 50px;
 }
 
@@ -151,21 +171,97 @@ p
 }
 #content_banner
 {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
     margin:6px solid rosebrown;
     padding:30px;
 
 }
 .box{
-    margin:5px;
-    padding:20px;
+   
+   /* background-image: url(../images/black.jpg);
+    background-repeat: no-repeat center;
+    background-size: cover;*/
+    width: 100%;
+    margin-top:-10px;
+    background-color: #252525;
+    scroll-behavior: smooth;
+    
+    
 }
 .ptext{
-    padding:20px;
+    padding:50px;
     align-items:justify;
     line-height: 2em;
+    color:rgba(248, 203, 0, 0.938);
     
 
 }
+
+.social img
+{
+    border-radius: 50%;
+}
+#about, #experience, #contact
+{
+height:480px;
+}
+#about 
+{
+    background-image: url(../images/about.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#experience
+{
+    background-image: url(../images/interstellar.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+#contact
+{
+    background-image: url(../images/contact-us-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    
+}
+
+.content
+{
+    background-color: rgba(39, 38, 38, 0.8);
+    color: white;
+    height:480px;
+}
+.m
+{
+    margin-top: -18px;
+}
+
+.form input,textarea,button
+{
+    padding: 10px 15px;
+    width:60%;
+    display: block;
+    border-radius:4px;
+    box-sizing: border-box;
+    border: 1px solid rosybrown;
+    margin:auto;
+}
+.b
+{
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
 
