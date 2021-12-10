@@ -69,9 +69,9 @@ h2
     
     padding:10px;
     position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
- width: 100%;
- margin-bottom: 42px;
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
+    margin-bottom: 42px;
 
     
 }
@@ -106,7 +106,7 @@ h2
     padding:10px;
     background-color: #222222;
 }
-.navbar .container 
+.navbar .con 
 {
     float:right;
 
@@ -130,6 +130,14 @@ width: 30%;
 box-sizing: border-box;
 padding:10px;
 padding-left:30px;
+}
+
+#main_bar>img
+{
+    border:2px solid black;
+    border-top-right-radius: 25%;
+    border-bottom-left-radius: 25%;
+    box-shadow:10px 20px 10px #181818;
 }
  #side_bar
 {
@@ -175,6 +183,7 @@ padding-left:30px;
     color: white;
     margin:6px solid rosebrown;
     padding:30px;
+    border-radius:20px;
 
 }
 .box{
@@ -206,6 +215,7 @@ padding-left:30px;
 {
 height:480px;
 }
+
 #about 
 {
     background-image: url(../images/about.jpg);
@@ -252,9 +262,118 @@ height:480px;
 }
 .b
 {
-    margin-bottom: 0;
+    margin-top:30px;
+    
 }
 
+
+
+.details
+{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.bar 
+{
+    border:2px solid #f6f7fc;
+    border-radius: 20px;
+    position: relative;
+}
+.bar div{
+    border-radius: 10px;
+    height:9px;
+    width:0;
+    background-color:#fdfafb3a;
+    position: relative;
+}
+
+h2
+{
+    margin-bottom: 30px;
+    font-size: 33px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-weight: bold;
+}
+.skills:not(:last-child)
+{
+    margin-bottom:20px;
+}
+.container
+{
+    width: 100%;
+    background: linear-gradient(180deg, #00000000, #fdfafb3a);
+  padding:30px 30px 30px;
+  border:2px solid rgba(255, 255, 255, 0.06);
+  border-radius:10px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+
+}
+.container *
+{
+    font-family:"Poppins" ,sans-serif;
+    color:white;
+    font-weight:500;
+}
+.wrapper {
+    width:50%;
+    min-width:420px;
+    margin-left: 162px;
+    
+    
+
+
+}
+
+#html-bar
+{
+    animation: html-fill 2s forwards;
+
+}
+@keyframes html-fill 
+{
+    100%
+    {
+        width:90%;
+    }
+}
+
+#css-bar{
+    animation: css-fill 2s forwards;
+}
+@keyframes css-fill
+{
+    100%
+    {
+        width:72%;
+    }
+}
+
+#js-bar
+{
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill
+{
+    100%
+    {
+        width:70%;
+    }
+}
+#ReactJs-bar{
+    animation:rjs-fill 2s forwards;
+}
+@keyframes rjs-fill 
+{
+    100%
+    {
+        width:70%;
+    }
+}
 
 
 
